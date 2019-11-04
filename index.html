@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cosmic Velocity Data Viz</title>
+	<link rel="stylesheet" href="./styles.css">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/d3-simple-slider"></script>
+	<script src="https://d3js.org/d3-timer.v1.min.js"></script>
+</head>
+<body>
+	<div class='content'>
+		<h1>Can I lunch a rocket to the space?</h1>
+		<p>If you throw a cobble, it falls to the ground obviously. How about throwing it with different speed? If you want to throw it further to win your friends, what you will do?</p>
+		<p>Try the interactive graph below to observe the relationship between velocity and distance.</p>
+		<div id='viz1'>	
+		</div>
+		<div class='control'>
+			<button type='button' id='start'>Start</button>
+			<span>Adjust Velocity:</span>
+			<div id='slider1'>	
+			</div>			
+		</div>
+	</div>
+		<div class='content'>
+		<p>You may notice that with a higher velocity, the cobble will go further.</p>
+		<p>If this cobble has an extraordinary speed, will it still fall back to the ground? If not, where it goes?</p>
+		<p>Try the interactive graph below to see the moving pattern of the object under different velocity.</p>
+		<div id='viz2'>
+		</div>
+		<div class='control'>
+			<button type='button' id='rotate'>Start</button>
+			<span>Adjust Velocity:</span>
+			<div id='slider2'>
+			</div>
+		</div>
+		</div>
+
+	<div class='content'>
+		<p>On different planet, due to its mass, the object has different first and second cosmic velocity.</p>
+		<p>The mass of Jupiter is larger than that of Earth. The mass of Mars is the least.</p>
+		<p>Try the interactive graph below to see the moving pattern of the object around different planet.</p>
+		<div id='viz3-1'>
+		</div>
+		<div class='control'>
+				<span>Adjust Velocity:</span>
+				<div id='slidermars'>
+				</div>
+		</div>
+		<div id='viz3-2'>
+		</div>
+		<div class='control'>
+				<span>Adjust Velocity:</span>
+				<div id='sliderjupiter'>
+				</div>
+		</div>
+		<div id='viz3-3'>
+		</div>
+		<div class='control'>
+				<span>Adjust Velocity:</span>
+				<div id='sliderearth'>
+				</div>
+		</div>
+		<button type='button' id='compareStart'>Start All</button>
+	</div>
+	
+	<script src="./horizontalMotion.js"></script>
+	<script src="./rotateMotion.js"></script>
+	<script src="./compareMotion.js"></script>
+</body>
+</html>

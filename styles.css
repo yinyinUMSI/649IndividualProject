@@ -1,0 +1,81 @@
+div.tooltip {
+	display: table;
+	position: absolute;
+	background: rgb(127,195,225);
+	color: white;
+	font-size: 14px;
+	border-style: solid;
+	border: 0;
+	border-radius: 8px;
+	opacity: 0;	
+	text-align: center;			
+    width: 100px;					
+    height: 40px;					
+}
+.tooltipText {
+	display: table-cell;
+	vertical-align: middle;
+}
+.orbit {
+	fill: none;
+	stroke: grey;
+	stroke-dasharray: 5;
+}
+#target {
+	stroke: grey;
+	stroke-dasharray: 0;
+}
+#viz1, #viz2, #viz3-1, #viz3-2, #viz3-3 {
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+}
+h1 {
+	width:100%;
+	text-align: center;
+}
+p {
+	width: 70%;
+	margin: auto;
+}
+#slider1, #slider2, #slidermars, #sliderjupiter, #sliderearth {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	padding-top: 50px;
+}
+#slider1 svg, #slider2 svg {
+	margin: auto;
+	padding: 10px;
+}
+button {
+	background-color: rgb(221,121,96);
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	color: white;
+	width: 100px;
+	height: 40px;
+	vertical-align: middle;
+}
+.control {
+	width: 60%;
+	margin: auto;
+	padding: 10px;
+}
+span {
+	vertical-align: middle;
+	margin-left: 150px;
+}
+.curve {
+	stroke-dasharray: 5;
+	stroke: grey;
+}
+#targetearth, #targetmars, #targetjupiter {
+	stroke-dasharray: 0;
+}
+#compareStart {
+	display: block;
+	margin: auto;
+}
+
